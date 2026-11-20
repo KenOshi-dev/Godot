@@ -1,0 +1,67 @@
+# ============================================================
+# Godot 4
+# ============================================================
+.godot/
+.import/
+/android/
+.mono/
+data_*/
+
+# File export cục bộ (chứa đường dẫn máy và có thể chứa keystore)
+export.cfg
+export_presets.cfg
+
+# Bản dịch được sinh tự động từ file CSV
+*.translation
+
+# Log crash của Mono/C#
+mono_crash.*.json
+
+# ============================================================
+# .NET / C#
+# ============================================================
+bin/
+obj/
+.vs/
+.idea/
+*.user
+*.suo
+*.userprefs
+
+# ============================================================
+# Editor & IDE
+# ============================================================
+.vscode/
+
+# ============================================================
+# Obsidian
+# Giữ lại cấu hình chung, chỉ bỏ qua dữ liệu thay đổi theo máy
+# ============================================================
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/plugins/*/data.json
+.Trash/
+
+# ============================================================
+# Hệ điều hành
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+__MACOSX/
+
+# ============================================================
+# Build, export & file tạm
+# ============================================================
+/build/
+/dist/
+*.log
+*.tmp
+*.bak
+*.swp

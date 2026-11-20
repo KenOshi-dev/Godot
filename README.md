@@ -1,294 +1,192 @@
-<div align="center">
+<p align="center">
+  <img src="docs/banner.svg" alt="Godot 4 + C# — Học lập trình game từ con số 0" width="100%">
+</p>
 
- #
-Godot 4 + C# — Học Lập Trình Game
+<p align="center">
+  <img src="https://img.shields.io/badge/Godot-4.x-478CBF?style=for-the-badge&logo=godotengine&logoColor=white" alt="Godot 4.x">
+  <img src="https://img.shields.io/badge/.NET-8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET 8">
+  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C#">
+  <img src="https://img.shields.io/badge/Ti%E1%BA%BFng%20Vi%E1%BB%87t-FF4B4B?style=for-the-badge" alt="Tiếng Việt">
+</p>
 
-> [!NOTE]
-> **Bilingual content** · Godot 4.x (bản **.NET**) · C# trên .NET 8 · Rider hoặc VS Code
-
-[📦 Cấu trúc thư mục](#-cấu-trúc-thư-mục) · [🧭 Lộ trình 4 tuần](#-lộ-trình-4-tuần) · [📁 Tutorials](#-tutorials) · [📚 Courses](#-courses) · [⚙️ Cài Đặt](#️-cài-đặt) · [🔑 Khái Niệm Cốt Lõi](#-khái-niệm-cốt-lõi) · [📜 Quy ước**](#-quy-ước)
-
-**Repo này chứa một bộ tài liệu học game phát triển bằng Godot 4 và C#:**
-- **Tutorials/** — bài học nhỏ, từng kỹ năng rõ ràng, đi kèm Ví dụ code và Thử thách.
-- **Courses/** — chương trình dài, từ nền tảng C# đến dự án game đầy đủ (Platformer, Top-down RPG, xuất bản).
-
-> [!TIP]
-> Nếu chỉ có thời gian: bắt đầu bằng **Courses/** để có lộ trình chuyên sâu, rồi đi ngược lại **Tutorials/** để lấp chân lỗi hoặc học kỹ một chỗ nào đó.
-</div>
+<p align="center">
+  <b>Lý thuyết đủ sâu · Dự án làm từng bước · Lộ trình 28 ngày · Kèm 34 bộ pixel art</b><br>
+  Dành cho người mới bắt đầu, học Godot 4 và C# từ con số 0.
+</p>
 
 ---
 
+## Giới thiệu
 
-## 📖 Nội dung nhanh
-| Chỉ số | Mục tiêu |
+Đây là kho tài liệu **tự học lập trình game 2D bằng Godot 4 + C#**, viết hoàn toàn bằng tiếng Việt. Thay vì đọc rời rạc từng bài, bạn có một hệ thống liền mạch: hiểu ngôn ngữ C#, hiểu engine Godot, rồi áp dụng vào các dự án game hoàn chỉnh.
+
+Triết lý của repo rất đơn giản: **20% đọc, 80% gõ code**. Mỗi chương đều có ví dụ, bài tập, lỗi thường gặp và phần tự kiểm tra để bạn biết mình đã thực sự hiểu hay chưa.
+
+| Nội dung | Số lượng |
+| --- | :---: |
+| Giáo trình lý thuyết | **4** |
+| Tài liệu bài học | **23** |
+| Bộ asset pixel art | **34** |
+| Tệp asset đi kèm | **11.700+** (~172 MB) |
+| Lộ trình gợi ý | **28 ngày** |
+
+### Bạn sẽ học được gì?
+
+- **C# từ nền tảng đến nâng cao**: kiểu dữ liệu, OOP, collection, `null`, delegate/event, `async/await`, bộ nhớ và GC.
+- **Godot 4 từ trong ra ngoài**: Node, Scene, Resource, Signal, physics, TileMap, animation, UI, audio, shader, debug và export.
+- **Cách C# "nói chuyện" với Godot**: vòng đời node, `[Export]`, signal, `partial class`, `CallDeferred`, đa luồng và tối ưu.
+- **Làm game thật**: platformer, top-down RPG và game chiến thuật dàn quân, đi từng bước đến lúc đóng gói.
+- **Tư duy kiến trúc**: composition, state machine, event bus, kiểm thử và tổ chức mã nguồn khi dự án lớn dần.
+
+> [!TIP]
+> Bạn không cần học hết mọi thứ theo thứ tự. Chọn đúng lộ trình cho mục tiêu của mình ở phần [Bắt đầu nhanh](#bắt-đầu-nhanh).
+
+---
+
+## Nội dung repo có gì?
+
+### 4 giáo trình
+
+| Giáo trình | Nội dung chính | Thời lượng |
+| --- | --- | --- |
+| [Tài liệu học Godot 4 + C# từ cơ bản đến nâng cao](Courses/T%C3%A0i%20li%E1%BB%87u%20h%E1%BB%8Dc%20Godot%204%20%2B%20C%23%20t%E1%BB%AB%20c%C6%A1%20b%E1%BA%A3n%20%C4%91%E1%BA%BFn%20n%C3%A2ng%20cao%20%284%29.md) | Tài liệu chính: 21 mục tra cứu, phụ lục A–H, 2 dự án mẫu, chuyển GDScript sang C# | Tra cứu lâu dài |
+| [Lộ trình học Godot 4 + C#](Courses/L%E1%BB%99%20tr%C3%ACnh%20h%E1%BB%8Dc%20Godot%204%20%2B%20C%23.md) | Chia chặng, lịch 28 ngày, tiêu chí qua chặng, sổ theo dõi tiến độ | 28 ngày |
+| [Giáo trình lý thuyết Godot 4 cơ bản](Courses/Gi%C3%A1o%20tr%C3%ACnh%20l%C3%BD%20thuy%E1%BA%BFt%20Godot%204%20c%C6%A1%20b%E1%BA%A3n%20%28h%E1%BB%8Dc%20nhanh%2C%20hi%E1%BB%83u%20s%C3%A2u%29.md) | 19 chương về engine: editor, node/scene, signal, physics, UI, animation, export... | 7–10 ngày |
+| [Giáo trình lý thuyết C# trong Godot](Courses/Gi%C3%A1o%20tr%C3%ACnh%20l%C3%BD%20thuy%E1%BA%BFt%20C%23%20trong%20Godot%20%28c%C6%A1%20b%E1%BA%A3n%20%C4%91%E1%BA%BFn%20n%C3%A2ng%20cao%29.md) | 19 chương: ngôn ngữ C#, C# trong Godot, kiến trúc và cổng kiểm tra | 5–7 tuần |
+
+### 23 bài học
+
+| Thư mục | Số bài | Nội dung |
+| --- | :---: | --- |
+| [`Tutorials/Godot_Basic`](Tutorials/Godot_Basic) | 3 | Làm quen Godot: bản đồ tư duy, cài đặt, project và các loại file |
+| [`Tutorials/C%23_Basic`](Tutorials/C%23_Basic) | 20 | C# nền tảng → C# trong Godot → kiến trúc, kèm [cổng kiểm tra](Tutorials/C%23_Basic/question.md) cuối khóa |
+
+Các bài C# được chia theo đúng ba phần của giáo trình:
+
+| Bài | Chủ đề |
 | --- | --- |
-| 1 | Cài đặt môi trường Godot 4 + C# (.NET 8) và Rider/VS Code |
-| 2 | Thông hiểu **Node**, **Scene**, **SceneTree**, **Resource**, **Signal** |
-| 3 | Viết C# trong Godot: từ biến, điều kiện, vòng lặp, class đến `partial` |
-| 4 | Xây dựng **dự án nhỏ** tuần 1: Platformer 1 màn |
-| 5 | Xây dựng **Top-down RPG scale** tuần 3 |
-| 6 | Hiểu **Git**, **cấu trúc thư mục**, **export** và **tối ưu** |
+| [`task_0`](Tutorials/C%23_Basic/task_0.md) | Tổng quan và cách dùng giáo trình |
+| [`task_1` – `task_9`](Tutorials/C%23_Basic/task_1.md) | Ngôn ngữ C#: kiểu dữ liệu, luồng điều khiển, hàm, OOP, collection, ngoại lệ, event, async, bộ nhớ |
+| [`task_10` – `task_16`](Tutorials/C%23_Basic/task_10.md) | C# trong Godot: Node/Scene, signal, toán & thời gian, input/physics, Resource, đa luồng |
+| [`task_17` – `task_18`](Tutorials/C%23_Basic/task_17.md) | Nâng cao: design pattern, cấu trúc mã nguồn, kiểm thử và tooling |
+| [`question`](Tutorials/C%23_Basic/question.md) | Cổng kiểm tra trước khi bước vào dự án |
 
-## 📁 Cấu trúc thư mục
+### Lộ trình 28 ngày
+
+| Chặng | Thời gian | Kết quả |
+| --- | --- | --- |
+| **0. Chuẩn bị** | 0,5–1 ngày | Cài Godot .NET + .NET SDK 8, chạy được game trống |
+| **1. Nền tảng** | Ngày 1–4 | Nắm C# cơ bản, Node/Scene và vòng đời node |
+| **2. Platformer** | Ngày 5–14 | Hoàn thiện platformer: nhân vật, 2 màn, kẻ địch, HUD, menu, pause |
+| **3. Top-down RPG** | Ngày 15–21 | Bản đồ, va chạm, AI, inventory, lưu game |
+| **4. Đọc tutorial GDScript** | Ngày 22–23 | Dịch GDScript sang C# mà không bỏ lỡ tài nguyên hay |
+| **5. Kiến trúc & xuất bản** | Ngày 24–28 | Tối ưu, kiểm thử, đóng gói game |
+| **6. Dự án riêng** | Từ ngày 29 | Game chiến thuật dàn quân, 2D nhìn như 3D |
+
+---
+
+## Cấu trúc thư mục
 
 ```text
 .
-├── Courses/                     # Bộ chương trình học dài
-│   ├── Giáo trình lý thuyết Godot 4 cơ bản (học nhanh, hiểu sâu).md
-│   ├── Giáo trình lý thuyết C# trong Godot (cơ bản đến nâng cao).md
-│   ├── Lộ trình học Godot 4 + C#.md
-│   └── Tài liệu học Godot 4 + C# từ cơ bản đến nâng cao (4).md
-│
-├── Tutorials/                   # Bài học nhỏ, theo kỹ năng
-│   ├── C#_Basic/                # C# trong Godot: từ cơ bản đến nâng cao
-│   │   ├── task_2.md           # PHẦN 1. NGÔN NGỮ C# (chương 2)
-│   │   ├── ... 
-│   │   ├── task_0.md           # Tổng quan, cách dùng
-│   │   ├── task_1.md           # PHẦN 1. NGÔN NGỮ C# (chương 1)
-│   │   └── question.md         # Bài tập tổng kết
-│   │
-│   └── Godot_Basic/             # Godot cơ bản: node, scene, cấu hình, vật lý
-│       ├── task_0.md           # Giáo trình lý thuyết Godot 4 cơ bản
-│       ├── task_1.md           # Chương 1: Khái Niệm Cơ Bản & Bản Đồ Tư Duy
-│       └── task_2.md           # Chương 2: Cài Đặt, Project & Các Loại File
-│
+├── Courses/                  # 4 giáo trình lý thuyết dạng dài
+├── Tutorials/
+│   ├── Godot_Basic/          # 3 bài làm quen engine
+│   └── C#_Basic/             # 19 bài C# + cổng kiểm tra
+├── Assets/                   # 34 bộ pixel art đã giải nén
+├── zip/                      # File nén gốc của các bộ asset
+├── docs/
+│   └── banner.svg            # Ảnh bìa của repo
+├── .gitignore
 └── README.md
 ```
 
-> [!NOTE]
-> Nếu đang học theo lộ trình, chỉ cần đọc **Courses/** để biết bàn sách. **Tutorials/** dùng để thực hành kỹ năng chi tiết khi gặp vấn đề cụ thể.
+Toàn bộ tài liệu viết bằng Markdown, nên bạn có thể mở thư mục repo trực tiếp bằng [Obsidian](https://obsidian.md) để đọc, liên kết và ghi chú.
 
+---
 
+## Bắt đầu nhanh
 
-## 🧭 Lộ trình 4 tuần
-
-| Tuần | Nội dung chính | Dự án ứng dụng |
-| --- | --- | --- |
-| 1 | Cài đặt, Node/Scene, C# cơ bản, Input, Physics | **Platformer 1 màn** |
-| 2 | Tilemap, Animation, Signal, Resource | Hoàn thiện Platformer (kẻ địch, máu, nhặt đồ) |
-| 3 | Autoload, UI, Audio, State Machine, Navigation | **Top-down RPG nhỏ** |
-| 4 | Shader, C# nâng cao, Hiệu năng, Export | Hoàn thiện, đóng gói, xuất bản |
-
-Bạn có thể học theo **Courses/** (tự nâng cao đều đặn) hoặc **Tutorials/** (tìm kiếm nhanh một kỹ năng).
-
-## 🛠️ Cài Đặt
-
-### Yêu cầu
-
-- **Godot 4.x bản .NET** — bản thường chỉ chạy GDScript, **không dùng C#**.
-- **.NET SDK 8** — kiểm tra bằng `dotnet --version`.
-- **Rider** (khuyến nghị) hoặc **VS Code + C# Dev Kit**.
-
-> [!TIP]
-> Bật trong Godot: `Editor > Editor Settings > Dotnet > Editor > External Editor` → chọn **Rider**.
-
-
-### Tạo Project
-1. `Project > New Project`, đặt tên `Lab`.
-2. Mở `Project > Manage Editor Config` (nếu có) để Git Track tất cả file.
-3. Tạo file `script.cs` gắn vào node, **Build lại** (Ctrl+B) để Godot nạp assembly.
-
-### Kiểm Tra Môi Trường
+### 1. Clone repo
 
 ```bash
-dotnet --version
-godot --version
+git clone git@github.com:KenOshi-dev/Godot.git
+cd Godot
 ```
 
-## 🔑 Khái Niệm Cốt Lõi
+> Chỉ muốn đọc tài liệu? Bạn không cần cài gì thêm — mở thẳng các file trong `Courses/` hoặc `Tutorials/` bằng trình đọc Markdown yêu thích.
 
-### Node, Scene, SceneTree, Resource
+### 2. Cài môi trường thực hành
 
-| Khái niệm | Vị trí nhớ |
+| Thành phần | Ghi chú |
 | --- | --- |
-| **Node** | Đơn vị nhỏ nhất, mỗi node làm một việc (vẽ ảnh, va chạm, đếm giờ). |
-| **Scene** | Cây node lưu vào `.tscn`, có thể lồng và tái sử dụng. |
-| **SceneTree** | Cây tổng của game đang chạy; node cha xử lý trước, con theo thứ tự trong cây. |
-| **Resource** | Dữ liệu dùng chung (texture, âm thanh, dữ liệu tự thiết kế) không nằm trong cây. |
+| **Godot 4.x bản .NET** | Bản thường không chạy được C#. Tải tại [godotengine.org](https://godotengine.org/download) |
+| **.NET SDK 8** | Kiểm tra bằng `dotnet --version` |
+| **Rider** hoặc **VS Code + C# Dev Kit** | Rider miễn phí cho sinh viên và dự án phi lợi nhuận |
 
-> [!TIP]
-> Tư duy Godot: **chia game thành nhiều scene nhỏ**, mỗi scene tự đủ dùng, rồi ghép lại. Ví dụ: `Player.tscn`, `Enemy.tscn`, `Coin.tscn`, `Level1.tscn`, `HUD.tscn`.
+Sau khi sửa code C#, nhớ **Build** (Ctrl+B trong Godot) thì Inspector mới thấy script và các thuộc tính `[Export]` mới.
 
-### Cơ chế giao tiếp
+### 3. Chọn điểm bắt đầu
 
-- **Signal** — node bắn tín hiệu để báo sự kiện; các node khác lắng nghe. Mỗi node biết rất ít về nhau.
-- **Autoload** — một nút sống suốt game, không bị mất khi đổi scene.
-- **Project Settings** — cấu hình toàn cục như Input Map, Layer Names, Physics.
+| Mục tiêu của bạn | Nên đọc |
+| --- | --- |
+| Chưa biết gì về Godot | [Giáo trình lý thuyết Godot 4](Courses/Gi%C3%A1o%20tr%C3%ACnh%20l%C3%BD%20thuy%E1%BA%BFt%20Godot%204%20c%C6%A1%20b%E1%BA%A3n%20%28h%E1%BB%8Dc%20nhanh%2C%20hi%E1%BB%83u%20s%C3%A2u%29.md) → [Lộ trình](Courses/L%E1%BB%99%20tr%C3%ACnh%20h%E1%BB%8Dc%20Godot%204%20%2B%20C%23.md) |
+| Biết lập trình, muốn nhanh vào game | [Lộ trình 28 ngày](Courses/L%E1%BB%99%20tr%C3%ACnh%20h%E1%BB%8Dc%20Godot%204%20%2B%20C%23.md) → Chặng 0 và 1 |
+| Yếu C# hoặc mới học lập trình | [Giáo trình lý thuyết C#](Courses/Gi%C3%A1o%20tr%C3%ACnh%20l%C3%BD%20thuy%E1%BA%BFt%20C%23%20trong%20Godot%20%28c%C6%A1%20b%E1%BA%A3n%20%C4%91%E1%BA%BFn%20n%C3%A2ng%20cao%29.md) → [Tutorials/C#_Basic](Tutorials/C%23_Basic) |
+| Cần tra cứu một chủ đề | [Tài liệu chính](Courses/T%C3%A0i%20li%E1%BB%87u%20h%E1%BB%8Dc%20Godot%204%20%2B%20C%23%20t%E1%BB%AB%20c%C6%A1%20b%E1%BA%A3n%20%C4%91%E1%BA%BFn%20n%C3%A2ng%20cao%20%284%29.md) — Phần I, mục 1–21 |
 
-> [!TIP]
+### 4. Tạo project thực hành
 
-> Đừng gọi hàm giữa các node trực tiếp nếu có thể dùng Signal. Nó giúp bạn thay đổi cấu trúc mà không sợ vỡ code.
----
+Tạo một project Godot .NET tên `Lab`, mỗi chương một scene thử nghiệm. Với phần ngôn ngữ C#, dùng project console cho nhanh:
 
-## 🎮 Ví Dụ: Tạo Cơ Bản
-
-```csharp
-using Godot;
-
-public partial class Player : CharacterBody2D
-{
-    [Export] private float _speed = 200f;
-    [Export] private float _jumpForce = 400f;
-    private bool _isOnGround;
-
-    public override void _Ready()
-    {
-        // ...
-    }
-
-    public override void _PhysicsProcess(double delta)
-    {
-        // ...
-    }
-}
+```bash
+dotnet new console -n Lab
+cd Lab
+dotnet run
 ```
 
-## 🗂️ Cấu Trúc Tài Liệu
-
-| --- | --- | --- |
-| Thư mục | Loại | Mục đích |
-| `Tutorials/C#_Basic/` | Bài học nhỏ | C# trong Godot: cú pháp, pattern matching, collection, enum, class, OOP. |
-| `Tutorials/Godot_Basic/` | Bài học nhỏ | Godot 4: node, scene, renderer, file `.tscn`/`.tres`, Project Settings. |
-
-| `Courses/` | Tài liệu lớn | Lộ trình 4 tuần, giáo trình C#, phương pháp dạy học, cheatsheet, FAQ. |
+Đọc 10 phút → tự tay làm 20 phút → đóng tài liệu và giải thích lại bằng lời của mình. Đó là vòng lặp học hiệu quả nhất.
 
 ---
 
-## 📚 Tutorials
+## Kho asset
 
-### Tutorials/C#_Basic
+Repo đi kèm **34 bộ pixel art** (~11.700 tệp) đủ để làm một game 2D hoàn chỉnh. Bản giải nén nằm trong `Assets/`, bản nén gốc nằm trong `zip/`.
 
-| Bài | Chủ đề |
+| Nhóm | Bộ asset tiêu biểu |
 | --- | --- |
-| `task_0.md` | Tổng quan, cách dùng giáo trình |
-| `task_1.md` | PHẦN 1: NGÔN NGỮ C# (chương 1) |
-| `task_2.md` | PHẦN 1: NGÔN NGỮ C# (chương 2) |
-| `task_3.md` | PHẦN 1: NGÔN NGỮ C# (chương 3) |
-| `task_4.md` | PHẦN 1: NGÔN NGỮ C# (chương 4) |
-| `task_5.md` | PHẦN 1: NGÔN NGỮ C# (chương 5) |
-| `task_6.md` | PHẦN 1: NGÔN NGỮ C# (chương 6) |
-| `task_7.md` | PHẦN 1: NGÔN NGỮ C# (chương 7) |
-| `task_8.md` | PHẦN 1: NGÔN NGỮ C# (chương 8) |
-| `task_9.md` | PHẦN 1: NGÔN NGỮ C# (chương 9) |
-| `task_10.md` | PHẦN 2: GODOT (chương 10) |
-| `task_11.md` | PHẦN 2: GODOT (chương 11) |
-| `task_12.md` | PHẦN 2: GODOT (chương 12) |
-| `task_13.md` | PHẦN 2: GODOT (chương 13) |
-| `task_14.md` | PHẦN 2: GODOT (chương 14) |
-| `task_15.md` | PHẦN 2: GODOT (chương 15) |
-| `task_16.md` | PHẦN 2: GODOT (chương 16) |
-| `task_17.md` | PHẦN 3: NÂNG CAO (chương 17) |
-| `task_18.md` | Bài tập, ôn tập, lộ trình nâng cao |
-| `question.md` | Bài tập tổng kết |
+| **Nhân vật & hoạt ảnh** | Tiny Swords, Sprout Lands, Minifolks Humans, Berie's Adventure, Male Hero, Character Animations |
+| **UI & inventory** | Humble Gift Paper UI, Humble Gift Smart UI, Cozy UI Pack, Pocket Inventory, World Map Scroll |
+| **Môi trường & bối cảnh** | New Free Backgrounds 1–5, Mondstadt, Garden Cozy Kit, Pixel Art Top Down, Simple Cozy Farm |
+| **Hiệu ứng & kẻ địch** | Super Pixel Effects Gigapack, Effect and FX Pixel, Slime Mobs, Mecha-stone Golem |
+| **Khác** | Ghostpixxells Pixel Food, file nguồn Aseprite, phụ đề tutorial Godot |
 
-### Tutorials/Godot_Basic
-
-| Bài | Chủ đề |
-| --- | --- |
-| `task_0.md` | Giáo trình lý thuyết Godot 4 cơ bản |
-| `task_1.md` | Chương 1: Khái Niệm Cơ Bản & Bản Đồ Tư Duy |
-| `task_2.md` | Chương 2: Cài Đặt, Project & Các Loại File |
-
-
-## 📖 Courses
-
-| File | Mô tả |
-| --- | --- |
-| `Giáo trình lý thuyết Godot 4 cơ bản (học nhanh, hiểu sâu).md` | Học nhanh, hiểu sâu: editor, node, scene, resource, signal. |
-| `Giáo trình lý thuyết C# trong Godot (cơ bản đến nâng cao).md` | Từ C# 0, đến class, interface, delegate, async, game architecture. |
-| `Tài liệu học Godot 4 + C# từ cơ bản đến nâng cao (4).md` | Bộ tài liệu chính: cài đặt, project, C#, game dev, export. |
-| `Lộ trình học Godot 4 + C#.md` | Lộ trình 4 tuần, sổ theo dõi tiến độ, mục "bị kẹt". |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Mỗi bộ asset có file `License.txt`, `license.pdf` hoặc `readme` riêng — hãy đọc trước khi dùng ngoài mục đích học tập.
 
 ---
 
-## ⚙️ Quy Ước
+## Ghi chú bản quyền
 
-- **File C#**: `Tên_file.cs` phải trùng `Tên_class.cs` và class phải khai báo `public partial`.
-- **Script đầu tiên**:
-
-```csharp
-using Godot;
-
-public partial class Hello : Node
-{
-    public override void _Ready()
-    {
-        GD.Print("Node đã vào cây và sẵn sàng");
-    }
-}
-```
-
-> [!TIP]
-> Với C# trong Godot 4, bạn **không khởi tạo bằng `new`** để tạo node. Dùng `GD.Instance<T>()`, `new Node()`, hoặc `GD.Load<T>()`. Sau khi sửa code C#, hãy **Build lại** (Ctrl+B) để Godot nạp assembly và thấy biến mới.
-
-> [!TIP]
-> Với C# trong Godot 4, bạn **không khởi tạo bằng `new`** để tạo node. Dùng `GD.Instance<T>()`, `new Node()`, hoặc `GD.Load<T>()`. Sau khi sửa code C#, hãy **Build lại** (Ctrl+B) để Godot nạp assembly và thấy biến mới.
+- **Nội dung giáo trình** được viết và tổng hợp cho mục đích học tập, chia sẻ miễn phí.
+- **Asset đồ họa** thuộc bản quyền của các tác giả gốc. Repo chỉ lưu trữ để tiện học theo tài liệu.
+- Một số bộ asset yêu cầu ghi công (ví dụ: *Ozzbit Games*, *CraftPix*) hoặc giới hạn dùng cho dự án phi thương mại. Vui lòng kiểm tra license trong từng thư mục trước khi dùng.
+- Nếu bạn là tác giả và muốn gỡ một bộ asset, hãy mở issue hoặc liên hệ qua GitHub.
 
 ---
 
-## 📜 Bản đồ tài liệu
+## Đóng góp
 
-```text
-Courses/
-├── Giáo trình lý thuyết Godot 4 cơ bản (học nhanh, hiểu sâu).md      # 1468 dòng
-├── Giáo trình lý thuyết C# trong Godot (cơ bản đến nâng cao).md      # 2206 dòng
-├── Lộ trình học Godot 4 + C#.md                                        # 167 dòng
-└── Tài liệu học Godot 4 + C# từ cơ bản đến nâng cao (4).md           # 3919 dòng
+Mọi đóng góp đều được hoan nghênh:
 
-Tutorials/
-├── C#_Basic/                                                           # 22 bài
-│   ├── task_0.md
-│   ├── task_1.md
-│   ├── task_2.md
-│   ├── task_3.md
-│   ├── task_4.md
-│   ├── task_5.md
-│   ├── task_6.md
-│   ├── task_7.md
-│   ├── task_8.md
-│   ├── task_9.md
-│   ├── task_10.md
-│   ├── task_11.md
-│   ├── task_12.md
-│   ├── task_13.md
-│   ├── task_14.md
-│   ├── task_15.md
-│   ├── task_16.md
-│   ├── task_17.md
-│   ├── task_18.md
-│   └── question.md
-│
-└── Godot_Basic/                                                        # 3 bài
-    ├── task_0.md
-    ├── task_1.md
-    └── task_2.md
-```
+1. Fork repo và tạo branch mới (`feat/ten-bai-hoc` hoặc `fix/loi-chinh-ta`).
+2. Sửa nội dung, thêm bài tập hoặc cập nhật asset.
+3. Mở Pull Request, mô tả ngắn gọn thay đổi.
 
-
+Các đóng góp hữu ích nhất: sửa lỗi chính tả, làm rõ chỗ khó hiểu, thêm ví dụ C# chạy được, và bổ sung link tài nguyên chất lượng.
 
 ---
-## 🙏 Lời cảm ơn
 
-- **Godot engine** (https://godotengine.org)
-- **.NET / C#** (https://dotnet.microsoft.com)
-- **Rider** (https://jetbrains.com/rider) / **VS Code**
-- Tất cả người đã góp ý, test và chỉnh sửa tài liệu.
- 
+<p align="center">
+  Nếu repo này giúp bạn bắt đầu, hãy để lại một ⭐ — đó là động lực để mình viết tiếp.<br><br>
+  <b>Made with ❤️ &amp; ☕ · Godot 4 + C#</b>
+</p>

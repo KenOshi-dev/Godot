@@ -25,7 +25,7 @@ Với game 2D, **Compatibility là lựa chọn an toàn** và nhẹ; bạn có 
 
 | File / thư mục      | Là gì                             | Ghi chú                                      |
 | ------------------- | --------------------------------- | -------------------------------------------- |
-| `project.godot`     | cấu hình dự án (Project Settings) | vƒÉn bản, có thể commit Git                  |
+| `project.godot`     | cấu hình dự án (Project Settings) | văn bản, có thể commit Git                   |
 | `*.tscn`            | **scene** dạng văn bản            | bản nhị phân là `.scn`                       |
 | `*.tres`            | **resource** dạng văn bản         | bản nhị phân là `.res`                       |
 | `*.gd`, `*.cs`      | script GDScript / C#              |                                              |
